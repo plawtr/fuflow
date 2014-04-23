@@ -9,81 +9,15 @@
       %br
     %h5.text-center
       US tax form. Collected. Seamlessly.
-%hr
-.row
-  .large-3.panel.columns
-    %img{:src => "http://placehold.it/500x500&text=Image"}
-    %h4 Header
-    %p Fusce ullamcorper mauris in eros dignissim molestie posuere felis blandit. Aliquam erat volutpat. Mauris ultricies posuere vehicula. Sed sit amet posuere erat. Quisque in ipsum non augue euismod dapibus non et eros.
-    %hr
-    .row
-      .large-4.columns
-        %a.small.button{:href => "#"} Link
-      .large-4.columns
-        %a.small.button{:href => "#"} Link
-      .large-4.columns
-        %a.small.button{:href => "#"} Link
-  .large-9.columns
-    .panel
-      .row
-        .large-3.columns
-          %img{:src => "http://placehold.it/600x500&text=Thumbnail"}
-        .large-3.columns
-          %img{:src => "http://placehold.it/600x500&text=Thumbnail"}
-        .large-3.columns
-          %img{:src => "http://placehold.it/600x500&text=Thumbnail"}
-        .large-3.columns
-          %img{:src => "http://placehold.it/600x500&text=Thumbnail"}
-        .large-3.columns
-          %img{:src => "http://placehold.it/600x500&text=Thumbnail"}
-        .large-3.columns
-          %img{:src => "http://placehold.it/600x500&text=Thumbnail"}
-        .large-3.columns
-          %img{:src => "http://placehold.it/600x500&text=Thumbnail"}
-        .large-3.columns
-          %img{:src => "http://placehold.it/600x500&text=Thumbnail"}
-        .large-3.columns
-          %img{:src => "http://placehold.it/600x500&text=Thumbnail"}
-        .large-3.columns
-          %img{:src => "http://placehold.it/600x500&text=Thumbnail"}
-        .large-3.columns
-          %img{:src => "http://placehold.it/600x500&text=Thumbnail"}
-        .large-3.columns.end
-          %img{:src => "http://placehold.it/600x500&text=Thumbnail"}
-    .row
-      .large-6.columns
-        .panel
-          %h5 Subheader
-          %p Sed sit amet posuere erat. Quisque in ipsum non augue euismod dapibus non et eros.
-          %a.small.button{:href => "#"} Link
-      .large-6.columns
-        .panel
-          %h5 Subheader
-          %p Sed sit amet posuere erat. Quisque in ipsum non augue euismod dapibus non et eros.
-          %a.small.button{:href => "#"} Link
-%hr
-.testimonial-wrap
-  .row
-    .large-12.columns.centered-text
-      %h2.testimonial What these awesome people have to say!
-  .row
-    .large-6.columns.testimonial
-      .quote
-        %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ultrices, elit sed faucibus pharetra, diam mauris bibendum orci, sit amet ullamcorper purus dui sit amet augue. Donec aliquet diam ut neque mattis, eu tristique sem rutrum.
-      .student
-        .photo
-        %p John Doe
-        %p Important person, some Company
-    .large-6.columns.testimonial
-      .quote
-        %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ultrices, elit sed faucibus pharetra, diam mauris bibendum orci, sit amet ullamcorper purus dui sit amet augue. Donec aliquet diam ut neque mattis, eu tristique sem rutrum.
-      .student
-        .photo
-        %p John Doe
-        %p Important person, some Company
-%hr
-%section.benefits
-  .row
+
+.row.home-buttons
+  .large-6.columns
+    %a.button.expand.secondary{href: "#"} CONTACT
+  .large-6.columns
+    %a.button.expand{href: "#"} REGISTER
+
+%section.benefits{style: "background: #ffd707;"}
+  .row{style:"padding-top:50px"}
     .small-12.large-4.columns.benefit
       %i.fi-credit-card.icon
       %h5 Great online shopping
@@ -117,8 +51,29 @@
       %p Cupcake ipsum dolor sit. Amet I love liquorice jujubes pudding croissant I love pudding. Apple pie macaroon toffee jujubes pie tart.
 
 
-%hr
-.row.collapse
+
+%section.benefits{style: "background: black; padding: 40px 0 40px 0; "}
+  .row
+    .large-12.columns
+      %h3.text-center{style: "font-family: 'Roboto Condensed', sans; line-height: 1em; padding:0px 60px 30px 60px; color: #ffd707;"}
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ultrices, elit sed faucibus pharetra, diam mauris bibendum orci, sit amet ullamcorper purus dui sit amet augue. Donec aliquet diam ut neque mattis, eu tristique sem rutrum."
+      %h6.text-center{style: "color: #ffd707;"}
+        John Doe, Important person, some Company
+        
+%section{style: "padding: 450px 0 50px 0; background-image: url('assets/photo.JPG'); background-size: cover;"} 
+  %br
+
+
+%section.benefits{style: "background: white; padding: 40px 0 40px 0; "}
+  .row
+    .large-12.columns
+      %h3.text-center{style: "font-family: 'Roboto Condensed', sans; line-height: 1em; padding:0px 60px 30px 60px;"}
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ultrices, elit sed faucibus pharetra, diam mauris bibendum orci, sit amet ullamcorper purus dui sit amet augue. Donec aliquet diam ut neque mattis, eu tristique sem rutrum."
+      %h6.text-center
+        John Doe, Important person, some Company
+
+
+.row.collapse{style: "margin-top: 30px;"}
   .large-4.columns
     %ul.pricing-table.left-side
       %li.title Premium
