@@ -22,7 +22,7 @@ gem 'coffee-rails', '~> 4.0.0'
 gem 'jquery-rails'
 
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
-gem 'turbolinks'
+# gem 'turbolinks'
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 1.2'
@@ -50,6 +50,8 @@ end
 gem 'foundation-rails'
 gem 'haml'
 gem "haml-rails"
+gem 'foundation-icons-sass-rails'
+
 # gem "paperclip", "~> 4.1"
 
 # gem 'stripe', :git => 'https://github.com/stripe/stripe-ruby'
