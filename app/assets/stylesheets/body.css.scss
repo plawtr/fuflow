@@ -1,0 +1,106 @@
+.benefits{
+    margin-top: 50px;
+hr{
+    width: 70%;
+    border: 1px solid #ccc;
+  }
+  h5{
+    font-weight: 300;
+  }
+  p{
+    color: #666;
+    font-weight: 300;
+  }
+  .benefit{
+    margin-top: 30px;
+  }
+  
+  .icon{
+    font-size: 40px;
+    color: #ccc;
+  }
+}      
+
+ul.pricing-table { 
+  margin-bottom: 0; 
+  .price { 
+    background: #f8f8f8;  
+  }
+  i { 
+    display: inline-block; 
+    margin-right: 5px; 
+  } 
+}
+
+.recommended { 
+  box-shadow: 0 0 10px rgba(0,0,0,0.25); 
+  position: relative; 
+  z-index: 2; 
+}
+
+@media only screen and (min-width: 768px){
+  .left-side { 
+    border-right: none; 
+  }
+  .right-side { 
+    border-left: none; 
+  }
+}   
+
+              
+h2.testimonial{
+  margin-top: 40px;
+  font-weight: 200;
+  color: #333;
+}
+
+.centered-text {
+  text-align: center;
+}
+
+.quote {
+  background: #ebf3f5;
+  padding: 15px 20px 5px 15px;
+  border-radius: 5px;
+  margin-bottom: 30px;
+  &:after {
+    content: '';
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 20px 18px 0 18px;
+    border-color: #ebf3f5 transparent transparent transparent;
+    position: relative;
+    top: 37px;
+    left: 20px;
+  }
+}
+
+.student {
+  margin-left: 25px;
+  margin-bottom: 80px;
+  .photo{
+    background-color: #ccc;
+    border-radius: 100px;
+    width: 60px;
+    height: 60px;
+    float: left;
+    margin-right: 10px;
+  }
+  p{
+    position: relative;
+    top: 5px;
+    text-transform: uppercase;
+    &:nth-child(2) {
+      font-size: 16px;
+      font-weight: 600;
+      margin-bottom: 0;
+    }
+    &:nth-child(3) {
+      font-size: 14px;
+      color: #777;
+    }
+  }
+}
+
+    
