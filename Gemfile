@@ -51,6 +51,8 @@ gem 'foundation-rails'
 gem 'haml'
 gem "haml-rails"
 gem 'foundation-icons-sass-rails'
+gem 'pg'
+gem 'gibbon'
 
 # gem "paperclip", "~> 4.1"
 

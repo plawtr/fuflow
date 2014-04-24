@@ -5,5 +5,9 @@ class ApplicationController < ActionController::Base
 
   def index
 	end
-
+	def format_errors(error_messages)
+  	output = []
+  	error_messages.each {|k, v| output << "#{k.to_s.capitalize} #{v.join(", ")}."}
+  	output
+  end
 end
