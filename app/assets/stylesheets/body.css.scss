@@ -60,4 +60,17 @@ ul.pricing-table {
   top: 2.6em;
 }
 
+.orbit-container {
+    overflow: visible !important;
+}
+.orbit-slides-container {
+    overflow: hidden !important;    
+}
+.orbit-container .orbit-prev {
+    margin-left: -50px;
+}
+.orbit-container .orbit-next {
+    margin-right: -50px;
+}
+
     
