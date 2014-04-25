@@ -9,7 +9,8 @@ W8::Application.routes.draw do
   
   root 'application#index'
   get 'terms' => 'application#terms'
-
+  get 'pricing' => 'application#pricing'
+  get 'sessions/new' => 'application#login'
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 

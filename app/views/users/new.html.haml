@@ -1,4 +1,27 @@
-= form_for @user do |form|
-	= form.text_field :name 
-	= form.email_field :email
-	= form.submit 
+.row
+  .large-11.large-centered.columns{style: "padding-top: 50px;"}
+    %h1 Hello! You caught us before we are ready.
+    %h4{style: "padding-bottom: 30px;"} We are working hard to put the finishing touches on w‑8forms.com. Things are going well and w‑8forms.com should be ready to help you with your W-8 forms compliance very soon. If you would like us to send you a reminder when we are ready, just put in your name and email below: 
+  .row
+    .large-6.large-centered.columns
+      = form_for @user do |form|
+        .row.collapse
+          .small-2.columns
+            %span.prefix
+              %i.fi-torso{style: "font-size: 2em;"}
+          .small-10.columns
+            = form.text_field :name, :placeholder => "Name"
+        .row.collapse
+          .small-2.columns
+            %span.prefix
+              %i.fi-mail{style: "font-size: 2em;"}
+          .small-10.columns
+            = form.email_field :email, :placeholder => "Email"
+        .row.collapse
+          .large-12.large-centered.columns
+            = form.submit "REMIND ME", :class => "button", :style => "margin-left: 35%;" 
+      .row.collapse
+        %p.text-center
+          Already have an account?
+          %a{href: "#"} Login here &raquo
+
