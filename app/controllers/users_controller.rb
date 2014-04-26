@@ -18,7 +18,8 @@ class UsersController < ApplicationController
         	:send_welcome => true})
 
 		rescue Gibbon::MailChimpError => e
-  		flash[:error] = e.message
+      error = e.code == 214 ? "#{email} is already subscribed" : e.message
+  		flash[:error] = error
       redirect_to new_user_path
     else
       flash[:notice] = "Succesfully registered"
