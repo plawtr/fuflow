@@ -11,6 +11,7 @@ W8::Application.routes.draw do
   get 'terms' => 'application#terms'
   get 'pricing' => 'application#pricing'
   get 'sessions/new' => 'application#login'
+  get 'explore' => 'application#explore'
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
