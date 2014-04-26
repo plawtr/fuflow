@@ -23,7 +23,7 @@ class UsersController < ApplicationController
       redirect_to new_user_path
     else
       flash[:notice] = "Succesfully registered"
-      redirect_to root_path
+      redirect_to new_user_path
 		end
       
   end
