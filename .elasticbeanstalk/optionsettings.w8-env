@@ -1,6 +1,6 @@
 [aws:autoscaling:asg]
 Custom Availability Zones=
-MaxSize=4
+MaxSize=1
 MinSize=1
 
 [aws:autoscaling:launchconfiguration]
@@ -21,6 +21,8 @@ Application Healthcheck URL=
 
 [aws:elasticbeanstalk:application:environment]
 BUNDLE_WITHOUT=test:development
+MAILCHIMP_API_KEY=2112362452c42b4ecc5bd8e9ad2081ac
+MAILCHIMP_LIST_ID=8b25d7ddf4
 PARAM1=
 PARAM2=
 PARAM3=
