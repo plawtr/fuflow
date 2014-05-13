@@ -1,0 +1,14 @@
+[global]
+ApplicationName=w8
+AwsCredentialFile=/Users/Vasenka/.elasticbeanstalk/aws_credential_file
+DevToolsEndpoint=git.elasticbeanstalk.us-east-1.amazonaws.com
+EnvironmentName=w8-env
+EnvironmentTier=WebServer::Standard::1.0
+EnvironmentType=LoadBalanced
+InstanceProfileName=aws-elasticbeanstalk-ec2-role
+OptionSettingFile=/Users/Vasenka/Projects/w8/.elasticbeanstalk/optionsettings.w8-env
+RdsEnabled=No
+Region=us-east-1
+ServiceEndpoint=https://elasticbeanstalk.us-east-1.amazonaws.com
+SolutionStack=64bit Amazon Linux 2014.03 v1.0.1 running Ruby 2.0 (Puma)
+
