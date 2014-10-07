@@ -3,4 +3,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-W8::Application.load_tasks
+FUFLOW::Application.load_tasks

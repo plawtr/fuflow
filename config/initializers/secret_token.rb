@@ -9,4 +9,4 @@
 
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
-W8::Application.config.secret_key_base = '8f02ea2d629d9717c9d535b2aff04c3098542291e996262580bb24d9af53afc8c8efe146f948f741d86150a13ca2835da3aba208ea7cd890672b88e207d9d67e'
+FUFLOW::Application.config.secret_key_base = '8f02ea2d629d9717c9d535b2aff04c3098542291e996262580bb24d9af53afc8c8efe146f948f741d86150a13ca2835da3aba208ea7cd890672b88e207d9d67e'

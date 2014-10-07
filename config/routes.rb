@@ -1,4 +1,4 @@
-W8::Application.routes.draw do
+FUFLOW::Application.routes.draw do
 
   resources:users, only: [:new, :create]
   post 'users/create' 
