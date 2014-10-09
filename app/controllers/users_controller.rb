@@ -4,16 +4,16 @@ class UsersController < ApplicationController
   end
 
   def create
-    mailchimp_register(params[:name], params[:email])   
+    mailchimp_register(params[:name], params[:email], params[:phone])   
   end
 
-  def mailchimp_register(name, email)
+  def mailchimp_register(name, email, phone)
   	gb = Gibbon::API.new
     begin
 
     	gb.lists.subscribe({:id => ENV['MAILCHIMP_LIST_ID'], 
           :email => {:email => email}, 
-          :merge_vars => {:FNAME => name},
+          :merge_vars => {:FNAME => name, :PHONE => phone},
           :double_optin => false,
         	:send_welcome => true})
 
